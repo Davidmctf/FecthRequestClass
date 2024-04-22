@@ -52,3 +52,11 @@ constructor(data) {
   // Implementación del constructor
 }
 ```
+
+## Métodos Principales
+
+- **setUrl(url)**: Establece la URL de la solicitud.
+- **getUrl()**: Obtiene la URL actual de la solicitud.
+- **setDebug(debug)**: Establece el modo de depuración.
+- **getDebug()**: Obtiene el estado actual del modo de depuración.
+- **sendRequest()**: Envía la solicitud HTTP con la configuración actual y devuelve una promesa con la respuesta.
