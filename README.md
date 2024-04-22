@@ -4,7 +4,7 @@ La clase `RequestData` facilita el envío de solicitudes HTTP con configuracione
 
 ## Uso
 
-Importa la clase RequestData en tu aplicación y crea una instancia con la configuración deseada:
+Importa la clase `RequestData` en tu aplicación y crea una instancia con la configuración deseada:
 
 ````markdown
 El método `sendRequest()` envía la solicitud HTTP y devuelve una promesa:
@@ -31,3 +31,24 @@ try {
 }
 ```
 ````
+
+# Documentación
+
+## Constructor
+
+```javascript
+/**
+ * Constructor de la clase RequestData.
+ * @param {object} data - Configuración inicial para la solicitud.
+ * @param {string} [data.url=window.location.href] - URL de la solicitud (por defecto, la URL actual).
+ * @param {string} [data.method="POST"] - Método HTTP (por defecto, "POST").
+ * @param {boolean} [data.debug=false] - Habilitar modo de depuración (por defecto, desactivado).
+ * @param {object} [data.body] - Cuerpo de la solicitud (opcional).
+ * @param {string} [data.typeSend="JSON"] - Formato de datos enviados ("JSON" por defecto).
+ * @param {string} [data.typeReceive="JSON"] - Formato esperado de los datos de respuesta ("JSON" por defecto).
+ * @param {boolean} [data.addBody=true] - Adjuntar cuerpo de la solicitud a los datos de respuesta (por defecto, activado).
+ */
+constructor(data) {
+  // Implementación del constructor
+}
+```
