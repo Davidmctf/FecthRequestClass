@@ -60,3 +60,28 @@ constructor(data) {
 - **setDebug(debug)**: Establece el modo de depuración.
 - **getDebug()**: Obtiene el estado actual del modo de depuración.
 - **sendRequest()**: Envía la solicitud HTTP con la configuración actual y devuelve una promesa con la respuesta.
+
+## Compatibilidad
+
+Este proyecto utiliza características modernas de JavaScript que pueden no ser compatibles con todos los navegadores o entornos de ejecución. A continuación se detallan los requisitos mínimos de compatibilidad:
+
+- Sintaxis de Campos Privados de Clase (#url):
+  - Compatibilidad con navegadores: Google Chrome (versión XX+), Mozilla Firefox (versión XX+), Safari (versión XX+), Microsoft Edge (versión XX+).
+  - Compatibilidad con Node.js: Node.js (versión XX+).
+- Convención de "Name Mangling" (**url**): \* Esta convención no afecta la compatibilidad con los navegadores o entornos de ejecución, ya que es una convención de desarrollo más que una característica del lenguaje.
+  Es recomendable verificar la compatibilidad con las características de JavaScript utilizadas en este proyecto según los requisitos de tu aplicación y el entorno de ejecución específico. Consulta la documentación oficial de ECMAScript y los recursos de compatibilidad de navegadores y entornos de Node.js para obtener más información.
+
+## Contribución
+
+Si deseas contribuir a este proyecto, por favor sigue estas pautas:
+
+1. Realiza un fork del repositorio.
+2. Crea una nueva rama (git checkout -b feature/nueva-caracteristica).
+3. Realiza tus cambios y haz commit de ellos (git commit -am 'Agrega nueva característica').
+4. Sube tus cambios a la rama (git push origin feature/nueva-caracteristica).
+5. Abre un pull request.
+
+## Autor
+
+- **David Muñoz Cruz**
+  - **Correo electrónico:** [davidmctf@gmail.com]()
