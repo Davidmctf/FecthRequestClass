@@ -1,2 +1,28 @@
-# FecthRequestClass
-Clase que facilita el envío de solicitudes HTTP con configuraciones flexibles.
+# RequestData
+
+La clase `RequestData` facilita el envío de solicitudes HTTP con configuraciones flexibles en JavaScript.
+
+## Uso
+
+Importa la clase RequestData en tu aplicación y crea una instancia con la configuración deseada:
+
+`
+import { RequestData } from 'request-data';
+
+const requestData = new RequestData({
+url: 'https://api.example.com/data',
+method: 'POST',
+debug: true,
+body: { key: 'value' },
+typeSend: 'JSON',
+typeReceive: 'JSON',
+addBody: true
+});
+
+try {
+const response = await requestData.sendRequest();
+console.log('Response:', response);
+} catch (error) {
+console.error('Request failed:', error);
+}
+`
